@@ -360,21 +360,26 @@ idf.py qemu
 
 **🖥️ ผลลัพธ์ที่ควรเห็นใน QEMU:**
 ```
+ESP32 Memory Architecture Analysis
+==================================
+Flash string: Hello from Flash Memory!
+SRAM buffer: SRAM Test Data
+
 === ESP32 Memory Layout Analysis ===
-Stack variable address: 0x3ffb4550
-SRAM buffer address:    0x3ffb16ac
-Flash string address:   0x3f407d64
-Heap allocation:        0x3ffb526c
+Stack variable address: 0x3ffbxxxx
+SRAM buffer address:    0x3ffcxxxx  
+Flash string address:   0x400xxxxx
+Heap allocation:        0x3ffcxxxx
 
 === Heap Information ===
-Free heap size:         303088 bytes
-Min free heap size:     303088 bytes
-Largest free block:     172032 bytes
+Free heap size:         xxxxxx bytes
+Min free heap size:     xxxxxx bytes
+Largest free block:     xxxxxx bytes
 
 === Memory Usage by Type ===
-Internal SRAM:          380124 bytes
+Internal SRAM:          xxxxxx bytes
 SPI RAM (if available): 0 bytes
-DMA capable memory:     303088 bytes
+DMA capable memory:     xxxxxx bytes
 
 Memory analysis complete!
 ```
@@ -385,18 +390,18 @@ Memory analysis complete!
 
 | Memory Section | Variable/Function | Address (ที่แสดงออกมา) | Memory Type |
 |----------------|-------------------|----------------------|-------------|
-| Stack | stack_var | 0x_______ | SRAM |
-| Global SRAM | sram_buffer | 0x_______ | SRAM |
-| Flash | flash_string | 0x_______ | Flash |
-| Heap | heap_ptr | 0x_______ | SRAM |
+| Stack | stack_var | 0x3ffb4550 | SRAM |
+| Global SRAM | sram_buffer | 0x3ffb16ac | SRAM |
+| Flash | flash_string | 0x3f407d64 | Flash |
+| Heap | heap_ptr | 0x3ffb526c | SRAM |
 
 **Table 2.2: Memory Usage Summary**
 
 | Memory Type | Free Size (bytes) | Total Size (bytes) |
 |-------------|-------------------|--------------------|
-| Internal SRAM | _________ | 520,192 |
-| Flash Memory | _________ | varies |
-| DMA Memory | _________ | varies |
+| Internal SRAM | 380124 | 520,192 |
+| Flash Memory | 0 | varies |
+| DMA Memory | 303088 | varies |
 
 ### คำถามวิเคราะห์ (ง่าย)
 
