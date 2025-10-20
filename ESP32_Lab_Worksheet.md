@@ -360,26 +360,21 @@ idf.py qemu
 
 **🖥️ ผลลัพธ์ที่ควรเห็นใน QEMU:**
 ```
-ESP32 Memory Architecture Analysis
-==================================
-Flash string: Hello from Flash Memory!
-SRAM buffer: SRAM Test Data
-
 === ESP32 Memory Layout Analysis ===
-Stack variable address: 0x3ffbxxxx
-SRAM buffer address:    0x3ffcxxxx  
-Flash string address:   0x400xxxxx
-Heap allocation:        0x3ffcxxxx
+Stack variable address: 0x3ffb4550
+SRAM buffer address:    0x3ffb16ac
+Flash string address:   0x3f407d64
+Heap allocation:        0x3ffb526c
 
 === Heap Information ===
-Free heap size:         xxxxxx bytes
-Min free heap size:     xxxxxx bytes
-Largest free block:     xxxxxx bytes
+Free heap size:         303088 bytes
+Min free heap size:     303088 bytes
+Largest free block:     172032 bytes
 
 === Memory Usage by Type ===
-Internal SRAM:          xxxxxx bytes
+Internal SRAM:          380124 bytes
 SPI RAM (if available): 0 bytes
-DMA capable memory:     xxxxxx bytes
+DMA capable memory:     303088 bytes
 
 Memory analysis complete!
 ```
