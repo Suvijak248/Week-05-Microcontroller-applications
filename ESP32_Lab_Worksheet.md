@@ -851,10 +851,10 @@ void app_main() {
 
 | Metric | Value |
 |--------|-------|
-| Messages Sent | _______ |
-| Messages Received | _______ |
-| Average Latency (μs) | _______ |
-| Queue Overflow Count | _______ |
+| Messages Sent | 90 |
+| Messages Received | 10 |
+| Average Latency (μs) | 14022 |
+| Queue Overflow Count | 0 |
 
 ### คำถามวิเคราะห์
 
@@ -874,7 +874,7 @@ void app_main() {
 ### แบบฟอร์มส่งงาน
 
 **ข้อมูลนักศึกษา:**
-- ชื่อ: _________________________________
+- ชื่อ: _______________________
 - รหัสนักศึกษา: _______________________
 - วันที่ทำการทดลอง: ___________________
 
